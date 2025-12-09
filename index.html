@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Układ blokowy</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    header {
+      background: #15ff00;
+      text-align: center;
+      padding:30px;
+    }
+    .container {
+      display: flex;
+      min-height: 400px;
+    }
+    nav {
+      width: 200px;
+      background: rgb(255, 0, 0);
+      padding: 40px;
+    }
+
+    nav .nav-block {
+      background: rgb(0, 195, 255);
+      margin-bottom: 10px;
+      text-align: center;
+      padding: 40px;
+    
+    }
+
+    main {
+      flex: 1;
+      padding:30px;
+      background-color: rgb(255, 204, 0);
+    }
+
+    .section {
+      margin-bottom: 15px;
+      background: #d0ff00;
+      text-align: center;
+      padding:30px;
+      
+    }
+
+    footer {
+      background: rgb(255, 0, 234);
+      text-align: center;
+      padding:30px;
+    }
+  </style>
+</head>
+<body>
+  <header>blok nagłówkowy</header>
+
+  <div class="container">
+    <nav>
+      <div>blok nawigacyjny</div>
+      <div class="nav-block">blok 1</div>
+      <div class="nav-block">blok 2</div>
+      <div class="nav-block">blok 3</div>
+    </nav>
+
+    <main>
+      <div class="section">sekcja 1</div>
+      <div class="section">sekcja 2</div>
+      <div class="section">sekcja 3</div>
+    </main>
+  </div>
+
+  <footer>blok stopki</footer>
+</body>
+</html>
